@@ -1,4 +1,4 @@
-let s:id_len = 14
+let s:id_len = 15
 
 " Gets the Zettel ID of current file
 function! ZettelGetId(...)
@@ -98,7 +98,7 @@ function! ZettelPasteLink(...)
       execute "normal! i[[" . l:id . "]]"
     else
       " Tog rab the name, we need to grab only part of the string, which is
-      " the id plus a space (15) and not including the file extension .md(3)
+      " the id plus a space and not including the file extension .md(3)
       let l:end = strlen(l:name) - (s:id_len + 1) - 3
       let l:note_name = strpart(l:name, s:id_len + 1, l:end)
       execute "normal! i[[" . @a . "]] " . l:note_name
