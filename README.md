@@ -1,4 +1,4 @@
-# Zettel.vim
+# Zettel.vim -- **private fork**
 WARNING: Requires [Zettel](https://github.com/grantmiiller/zettel)
 
 ## Why?
